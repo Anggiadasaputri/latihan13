@@ -1,5 +1,5 @@
 <?php
-// error_reporting(0);
+error_reporting(0);
 if(isset($_POST['submit'])){
 	session_start();
 	if(md5($_POST['pin']) == $_SESSION['image_random_value']){
